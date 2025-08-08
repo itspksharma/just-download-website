@@ -3,22 +3,30 @@
     "id": "setup-guide",
     "name": "Setup Guide",
     "status": "Available",
-    "link": "src/assets/docs/setup-guide.pdf",
+    "link": "public/assets/docs/setup-guide.pdf",
     "steps": [
       {
-        "title": "Download the Application",
+        "title": "Go to Download Page",
         "description": "Go to our download page and get the latest version.",
-        "image": "/images/setup-step1.png"
+        "image": "public/assets/images/Download-now.png"
+        
+        
       },
       {
-        "title": "Install the Application",
-        "description": "Run the installer and follow the on-screen instructions.",
-        "image": "/images/setup-step2.png"
+        "title": "Download the Application",
+        "description": "click to download the app.",
+        "image": "public/assets/images/Download-Zip.png"
+        
       },
       {
-        "title": "Launch & Login",
-        "description": "Open the app and log in to start using it.",
-        "image": "/images/setup-step3.png"
+        "title": "Open the Application",
+        "description": "Run the installer.",
+        "image": "public/assets/images/Run-App.png"
+      },
+      {
+        "title": "Launch the App",
+        "description": "Enjoy downloading.",
+        "image": "public/assets/images/Enjoy-Downloader.png"
       }
     ]
   }
