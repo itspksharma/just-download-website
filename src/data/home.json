@@ -28,12 +28,12 @@
     }
   ],
   "screenshots": [
-    { "src": "public/assets/images/screen1.png", "alt": "App main interface" },
-    { "src": "public/assets/images/category-selector.png", "alt": "Category" },
-    { "src": "public/assets/images/format-selector.png", "alt": "Format" },
-    { "src": "public/assets/images/path-selector.png", "alt": "Path" },
-    { "src": "public/assets/images/progress-bar.png", "alt": "Download progress" },
-    { "src": "public/assets/images/Dashboard.png", "alt": "Dashboard" },
-    { "src": "public/assets/images/Results.png", "alt": "Download Results" }
+    { "src": "screen1.png", "alt": "App main interface" },
+    { "src": "category-selector.png", "alt": "Category" },
+    { "src": "format-selector.png", "alt": "Format" },
+    { "src": "path-selector.png", "alt": "Path" },
+    { "src": "progress-bar.png", "alt": "Download progress" },
+    { "src": "Dashboard.png", "alt": "Dashboard" },
+    { "src": "Results.png", "alt": "Download Results" }
   ]
 }
