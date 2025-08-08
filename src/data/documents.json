@@ -8,25 +8,25 @@
       {
         "title": "Go to Download Page",
         "description": "Go to our download page and get the latest version.",
-        "image": "Download-now.png"
+        "image": "/Download-now.png"
         
         
       },
       {
         "title": "Download the Application",
         "description": "click to download the app.",
-        "image": "Download-Zip.png"
+        "image": "/Download-Zip.png"
         
       },
       {
         "title": "Open the Application",
         "description": "Run the installer.",
-        "image": "Run-App.png"
+        "image": "/Run-App.png"
       },
       {
         "title": "Launch the App",
         "description": "Enjoy downloading.",
-        "image": "Enjoy-Downloader.png"
+        "image": "/Enjoy-Downloader.png"
       }
     ]
   }
