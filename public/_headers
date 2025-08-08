@@ -1,0 +1,7 @@
+/*.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=31536000
+/*.ico
+  Content-Type: image/x-icon
+/*.png
+  Content-Type: image/png
