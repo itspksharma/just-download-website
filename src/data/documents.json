@@ -1,0 +1,26 @@
+[
+  {
+    "id": "setup-guide",
+    "name": "Setup Guide",
+    "status": "Available",
+    "link": "src/assets/docs/setup-guide.pdf",
+    "steps": [
+      {
+        "title": "Download the Application",
+        "description": "Go to our download page and get the latest version.",
+        "image": "/images/setup-step1.png"
+      },
+      {
+        "title": "Install the Application",
+        "description": "Run the installer and follow the on-screen instructions.",
+        "image": "/images/setup-step2.png"
+      },
+      {
+        "title": "Launch & Login",
+        "description": "Open the app and log in to start using it.",
+        "image": "/images/setup-step3.png"
+      }
+    ]
+  }
+
+]

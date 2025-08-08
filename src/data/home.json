@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title": "Fast, Simple & Reliable Downloads",
+    "subtitle": "No extra steps, no bloat — just download what you need, instantly.",
+    "cta_primary_text": "Download Now",
+    "cta_primary_link": "/download",
+    "cta_secondary_text": "How to Install",
+    "cta_secondary_link": "/documents"
+  },
+  "about_hero": {
+    "title": "Want to Know More About Us?",
+    "subtitle": "Discover why Just-Download is the simplest way to get your files quickly and securely.",
+    "cta_text": "Learn More",
+    "cta_link": "/about"
+  },
+  "features": [
+    {
+      "title": "Lightning Fast",
+      "description": "Optimized for speed so you can download in seconds, not minutes."
+    },
+    {
+      "title": "Cross Platform",
+      "description": "Works on Windows, Mac, and Linux (coming soon)."
+    },
+    {
+      "title": "No Bloat",
+      "description": "Lightweight and free from unnecessary features."
+    }
+  ],
+  "screenshots": [
+    { "src": "src/assets/images/screen1.png", "alt": "App main interface" },
+    { "src": "src/assets/images/category-selector.png", "alt": "Category" },
+    { "src": "src/assets/images/format-selector.png", "alt": "Format" },
+    { "src": "src/assets/images/path-selector.png", "alt": "Path" },
+    { "src": "src/assets/images/progress-bar.png", "alt": "Download progress" },
+    { "src": "src/assets/images/Dashboard.png", "alt": "Dashboard" },
+    { "src": "src/assets/images/Results.png", "alt": "Download Results" }
+  ]
+}

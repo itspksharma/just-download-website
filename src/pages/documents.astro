@@ -1,0 +1,79 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import docs from '../data/documents.json';
+import plans from '../data/future-plans.json';
+
+
+const setupDoc = docs.find(doc => doc.id === "setup-guide");
+const otherDocs = docs.filter(doc => doc.id !== "setup-guide");
+---
+
+<MainLayout title="Documents - Just-Download">
+  <section class="max-w-5xl mx-auto px-6 py-8 space-y-10">
+
+    <!-- Setup Guide -->
+    {setupDoc && (
+      <div>
+        <h2 class="text-3xl font-bold mb-4 border-b pb-2">Setup Guide</h2>
+        <div class="p-6 bg-white border-l-4 border-indigo-600 rounded-lg shadow-sm hover:shadow-md transition">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div>
+              <h3 class="text-xl font-semibold">{setupDoc.name}</h3>
+              <p class="text-sm text-slate-500">Status: {setupDoc.status}</p>
+            </div>
+            <div class="mt-3 md:mt-0">
+              {setupDoc.status === "Available" && setupDoc.link ? (
+                <a href={setupDoc.link} target="_blank"
+                   class="px-5 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
+                  View Setup Guide
+                </a>
+              ) : (
+                <span class="px-5 py-2 bg-gray-200 text-gray-600 rounded cursor-not-allowed">
+                  Coming Soon
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Screenshot Steps */}
+          {setupDoc.steps && setupDoc.steps.length > 0 && (
+            <div class="mt-6 space-y-6">
+              {setupDoc.steps.map((step, index) => (
+                <div class="p-4 border rounded-lg bg-gray-50">
+                  <h4 class="font-semibold text-lg">Step {index + 1}: {step.title}</h4>
+                  <p class="text-sm text-gray-600">{step.description}</p>
+                  {step.image && (
+                    <img src={step.image} alt={step.title}
+                         class="mt-3 rounded-lg border shadow-sm max-w-full" />
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    )}
+
+    <!-- Future Plans -->
+    <div>
+      <h2 class="text-3xl font-bold mb-4 border-b pb-2">Future Plans</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        {plans.map(plan => (
+          <div class="p-4 bg-white rounded shadow">
+            <h3 class="text-lg font-semibold">{plan.name}</h3>
+            <p class="text-sm text-slate-500">Status: {plan.status}</p>
+            {plan.link ? (
+              <a href={plan.link} target="_blank" class="mt-3 inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">
+                Open Link
+              </a>
+            ) : (
+              <span class="mt-3 inline-block px-4 py-2 bg-gray-200 text-gray-600 rounded">Not Available</span>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+
+
+  </section>
+</MainLayout>

@@ -1,0 +1,26 @@
+{
+  "latest": {
+    "tag": "v1.0.0",
+    "version": "1.0.0",
+    "released_at": "2025-08-08",
+    "notes": "Initial stable release — Windows installer available.",
+    "assets": {
+      "windows": {
+        "label": "JustDownload_Setup_v1.0.0.zip",
+        "url": "https://example.com/JustDownload_Setup_v1.0.0.zip",
+        "sha256": "1D49859F1A0377FD8D8C70C04F0EBAB7D0F00203B72E5D2CF6DAF914AAA61085",
+        "size": "98 MB"
+      },
+      "linux": { "label": "Coming Soon", "url": "", "status": "coming-soon" },
+      "mac": { "label": "Coming Soon", "url": "", "status": "coming-soon" },
+      "zip": {
+        "label": "JustDownload_v1.0.0.zip",
+        "url": "https://example.com/JustDownload_v1.0.0.zip",
+        "sha256": ""
+      },
+      "android": { "label": "Coming Soon", "url": "", "status": "coming-soon" }
+    },
+    "releases_page": "https://github.com/itspksharma/just-download"
+  },
+  "older": []
+}

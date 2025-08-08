@@ -1,0 +1,15 @@
+{
+  "title": "Just-Download",
+  "description": "Just-Download is a lightweight, fast, and simple tool that allows you to download content directly without unnecessary complexity. Designed for speed and ease of use, it supports multiple platforms and formats.",
+  "features": [
+    "Simple, no-bloat interface",
+    "Supports multiple platforms",
+    "Fast & reliable downloads",
+    "Cross-platform compatibility"
+  ],
+  "author": {
+    "name": "Pawan Kumar Sharma",
+    "role": "Developer",
+    "website": "https://askdevpk.me"
+  }
+}

@@ -1,0 +1,63 @@
+---
+const { title = "Just-Download" } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/globals.css" />
+  </head>
+  <body class="antialiased bg-slate-50 text-slate-900 flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b shadow-sm">
+      <nav class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="font-bold text-lg text-indigo-700 hover:text-indigo-900 transition">
+          <a href="/">Just-Download</a>
+        </div>
+        <div class="space-x-4">
+          <a href="/about" class="text-sm text-slate-700 hover:text-indigo-600 transition">About</a>
+          <a href="/download" class="text-sm text-slate-700 hover:text-indigo-600 transition">Download</a>
+          <a href="/documents" class="text-sm text-slate-700 hover:text-indigo-600 transition">Documents</a>
+          <a href="/contact" class="text-sm text-slate-700 hover:text-indigo-600 transition">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <slot />
+    </main>
+
+<!-- Footer -->
+<footer class="bg-white border-t mt-10">
+  <div class="max-w-5xl mx-auto px-6 py-6 text-center space-y-2">
+    
+    <p class="text-sm text-slate-600 flex flex-wrap justify-center gap-3">
+      <span>
+        🌟<a href="/contact" class="text-indigo-600 hover:underline">Contact Us</a>
+      </span>
+      <span>--</span>
+      
+      
+      <span>
+        🔒 <a href="src/assets/docs/Privacy&Policies.pdf" target="_blank" class="text-indigo-600 hover:underline">Privacy Policy</a>
+      </span>
+      <span>--</span>
+      <span>
+        📜 <a href="src/assets/docs/Terms&Conditions.pdf" target="_blank" class="text-indigo-600 hover:underline">Terms & Conditions</a>
+      </span>
+    </p>
+
+    <p class="text-xs text-slate-400">
+      &copy; {new Date().getFullYear()} Just-Download. All rights reserved.  
+      Use at your own discretion. Downloads from restricted platforms are prohibited.
+    </p>
+  </div>
+</footer>
+
+
+
+  </body>
+</html>
